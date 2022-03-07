@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BlazorCrudStudy.Shared
 {
-    internal class SuperHero
+    public class SuperHero
     {
         public int Id { get; set; }
         public string FirstName { get; set; }=String.Empty;
