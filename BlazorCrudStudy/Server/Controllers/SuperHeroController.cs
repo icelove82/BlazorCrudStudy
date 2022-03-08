@@ -22,6 +22,7 @@ namespace BlazorCrudStudy.Server.Controllers
                 FirstName = "Peter",
                 LastName = "Parker",
                 HeroName = "Spiderman",
+                ComicId = 1,
                 Comic = comics[0]
             },
             new SuperHero
@@ -30,6 +31,7 @@ namespace BlazorCrudStudy.Server.Controllers
                 FirstName = "Bruce",
                 LastName = "Wayne",
                 HeroName = "Batman",
+                ComicId = 2,
                 Comic = comics[1]
             }
         };
@@ -51,6 +53,12 @@ namespace BlazorCrudStudy.Server.Controllers
                 return NotFound("Sorry, no hero here. :/");
             }
             return Ok(hero);
+        }
+
+        [HttpGet("comics")]
+        public async Task<ActionResult<List<Comic>>> GetComics()
+        {
+            return Ok(comics);
         }
     }
 }

@@ -14,9 +14,11 @@ namespace BlazorCrudStudy.Client.Services.SuperHeroService
         public List<SuperHero> Heros { get ; set; } = new List<SuperHero>();
         public List<Comic> Comics { get; set; } = new List<Comic>();
 
-        public Task GetComics()
+        public async Task GetComics()
         {
-            throw new NotImplementedException();
+            var res = await _http.GetFromJsonAsync<List<Comic>>("api/superhero/comics");
+            if (res != null)
+                Comics = res;
         }
 
         public async Task<SuperHero> GetSingleHero(int id)
