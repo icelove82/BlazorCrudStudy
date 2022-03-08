@@ -19,9 +19,13 @@ namespace BlazorCrudStudy.Client.Services.SuperHeroService
             throw new NotImplementedException();
         }
 
-        public Task<SuperHero> GetSingleHero(int id)
+        public async Task<SuperHero> GetSingleHero(int id)
         {
-            throw new NotImplementedException();
+            var res = await _http.GetFromJsonAsync<SuperHero>($"api/superhero/{id}");
+            if (res != null)
+                return res;
+
+            throw new Exception("Hero not found.");
         }
 
         public async Task GetSuperHeros()

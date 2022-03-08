@@ -13,11 +13,21 @@ else
     <h3>Edit @hero.HeroName</h3>
 }
 
-<h3>Hero</h3>
-
 @code {
     [Parameter]
     public int? Id { get; set; }
 
     SuperHero hero = new SuperHero { Comic = new Comic() };
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Id == null)
+        {
+            // create new
+        }
+        else
+        {
+            hero = await SuperHeroService.GetSingleHero((int)Id);
+        }
+    }
 }
