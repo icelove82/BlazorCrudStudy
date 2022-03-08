@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCrudStudy.Server", "BlazorCrudStudy\Server\BlazorCrudStudy.Server.csproj", "{80D822F2-E0B1-4AE8-AEBE-1B60EA2E4F7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCrudStudy.Server", "BlazorCrudStudy\Server\BlazorCrudStudy.Server.csproj", "{80D822F2-E0B1-4AE8-AEBE-1B60EA2E4F7E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCrudStudy.Client", "BlazorCrudStudy\Client\BlazorCrudStudy.Client.csproj", "{DB8D6918-3FA0-4F2F-844B-BBAF4A06FF76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCrudStudy.Client", "BlazorCrudStudy\Client\BlazorCrudStudy.Client.csproj", "{DB8D6918-3FA0-4F2F-844B-BBAF4A06FF76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorCrudStudy.Shared", "BlazorCrudStudy\Shared\BlazorCrudStudy.Shared.csproj", "{2B4A332E-E7BB-4BF7-8316-AC5C41440B86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorCrudStudy.Shared", "BlazorCrudStudy\Shared\BlazorCrudStudy.Shared.csproj", "{2B4A332E-E7BB-4BF7-8316-AC5C41440B86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
