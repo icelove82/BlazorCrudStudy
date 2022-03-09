@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using BlazorCrudStudy.Shared;
 
 namespace BlazorCrudStudy.Server.Controllers
 {
